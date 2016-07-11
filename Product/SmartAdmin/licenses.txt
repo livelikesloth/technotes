@@ -1,0 +1,39 @@
+smartadmin	singleapplication(purchased)	https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0
+lightbox2	MIT	http://lokeshdhakar.com/projects/lightbox2/
+bootstrap	MIT	http://getbootstrap.com/
+react	BSD	https://github.com/facebook/react
+react-dom	BSD	https://www.npmjs.com/package/react-dom
+react-bootstrap	MIT	https://react-bootstrap.github.io/
+react-router	MIT	https://github.com/reactjs/react-router
+jquery	MIT	https://jquery.com/
+jquery-ui	MIT	https://jqueryui.com/
+moment	MIT	http://momentjs.com/
+easy-pie MIT	https://github.com/rendro/easy-pie-chart
+sparkline	MIT	http://omnipotent.net/jquery.sparkline/#s-about
+select2	MIT	https://select2.github.io/
+summernote	MIT	http://summernote.org/
+markdown	MIT	https://github.com/evilstreak/markdown-js
+he	MIT	https://github.com/mathiasbynens/he
+to-markdown	MIT	https://github.com/domchristie/to-markdown
+bootstrap-markdown	Apache License 2.0	http://www.codingdrama.com/bootstrap-markdown/
+bootstrap-slider	MIT	https://github.com/seiyria/bootstrap-slider
+bootstrap-progressbar	MIT	https://github.com/minddust/bootstrap-progressbar
+jquery-validate	MIT	https://jqueryvalidation.org/
+jquery-maskedinput	MIT	https://plugins.jquery.com/maskedinput/
+bootstrap-validator	MIT	http://1000hz.github.io/bootstrap-validator/
+ionslider	MIT	http://ionden.com/a/plugins/ion.rangeSlider/en.html
+nouislider	WTFPL	http://refreshless.com/nouislider/
+bootstrap-duallistbox	Apache License 2.0	http://www.virtuosoft.eu/code/bootstrap-duallistbox/
+bootstrap-timepicker	MIT	https://github.com/locarise/bootstrap3-fontawesome-timepicker
+clockpicker	Apache License 2.0	https://mjolnic.com/bootstrap-colorpicker/
+bootstrap-tagsinput	MIT	https://github.com/bootstrap-tagsinput/bootstrap-tagsinput
+jquery-knob	MIT	http://anthonyterrien.com/knob/
+x-editable	MIT	https://vitalets.github.io/x-editable/
+fuelux-wizard	BSD-3	http://getfuelux.com/
+dropzone	MIT	http://www.dropzonejs.com/
+jquery-nestable	BSD&MIT	http://dbushell.github.io/Nestable/
+jquery-toaster	Apache License 2.0	https://github.com/scottoffen/jquery.toaster
+datatables.net	MIT	https://datatables.net/
+raphael	MIT	http://dmitrybaranovskiy.github.io/raphael/
+dygraphs	MIT	http://dygraphs.com/
+chartjs	MIT	http://www.chartjs.org/
