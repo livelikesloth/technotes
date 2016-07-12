@@ -247,3 +247,6 @@ export default SDeskAclMgtDetailStore;
 * `import` 경로는 해당 `.jsx` **파일 위치**를 **기준**으로 설정한다.
 * `import` 시, 해당 `.jsx` 내에서 사용할 변수 명을 지정해야 한다. Java의 Class 명 처럼 첫 음절을 대문자로 사용한다.
 	* 예 : `import CKEditorDemo from './pages/misc/CKEditorDemo.jsx'`
+
+#### Logo 변경
+* `src\app\config\config.js` 내부의 각 Skin별로 logo 항목에 정의할 수 있다.
