@@ -1,4 +1,4 @@
-Front End Framework set 소개
+JG Front End Framework set 소개
 =====
 JAVA 기반의 Back-End에서는 Spring Framework를 이용하여 MVC 형태로 구축할 수 있다.
 대부분 개발자들은 MVC 모델에 대해 필요성을 잘 알고 있어서 이미 구조화되어 개발할 수 있는 Backend 쪽을 선호는 경향이 있다.
