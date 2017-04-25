@@ -96,3 +96,37 @@ globals:{
 
 Custom javascript lib 설치하기
 -----
+* `src` 디렉토리 밑에 적절한 위치를 선정하여 이전에 작성한(있다면...) javascript lib를 배치한다.
+	* 가이드 진행 상, `/src/libs`라는 디렉토리를 생성하고, `jglibs.js`를 위치 시킴
+	* ES6의 Module로 라이브러리가 적용되어야 하기 때문에, 모듈화 시키고, `export default`로 해당 모듈이 외부에서 사용할 수 있도록 해야 한다.
+	* `require`로 사용하려면, 라이브러리내 `define` 함수 정의를 하면된다.
+* `import`로 추가한 라이브러리를 사용할 **Vue**의 `<script>` 태그 안에 추가하면된다.
+	* `import jg from '@/libs/jglibs.js'`
+	* `@`는 src 디렉토리를 의미한다.
+* jQuery와 같이 **전역**으로 사용하려면, `main.js`에 jQuery와 동일하게 등록하고, eslint 예외 설정도 추가해야 한다.
+
+custom css 추가
+----
+* 템플릿 구성을 그대로 사용한다면, 각 컴포넌트 단위로 **Style**을 구성할 수 있다.
+	* `<style scoped>` 태그 내 **scoped**라고 정의하면, 그 컴포넌트 안에서만 동작하는 style이 되지만, scoped를 빼면 전체 적용된다.
+	* Component 단위로 잘 쪼개서 만든다면 문제가 없는 구조이지만...
+* CSS를 한 곳에 몰아 놓을 필요가 있다.
+	* 퍼블리셔가 작업 할 수 있고, Class 단위로 관리 등을 위해서 필요성이 있을 수 있다.
+	* `.css`로 파일을 만들어 스타일 정의해서 만들어 놓으면 됨.
+	* `main.js`에서 추가 시, 전체에서 사용 가능.
+
+less 추가
+----
+* webpack 템플릿 분석 간 less 및 scss 등 css 전처리기들을 지원하는데, 막상 설치될 때 설치되지 않는다.
+	* `less`와 `less-loader`를 설치한다.
+	* `$ npm install --save less less-loader`
+* less는 두가지 형태로 사용가능하다.
+	* `.less`파일을 만들고 `main.js`에서 등록
+	* 각 Vue Component내 **style**에서 선언
+		* `<style lang="less" scoped>`  
+
+
+링크
+----
+* [ES6: Module 설명](http://ohgyun.com/588)
+* [RequireJS 사용방법 정리](http://programmingsummaries.tistory.com/204)
