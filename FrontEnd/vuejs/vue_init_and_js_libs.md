@@ -65,6 +65,8 @@ jQuery 설치하기
 * `/src/main.js`에 jquery 등록
 	* 최상위 위치에 `window.$ = window.jQuery = require('jquery')` 추가
 	* **require**통해 jquery를 사용 등록한다.
+* jQuery가 설치 완료 되면, 버전을 가져와 설치됨을 확인한다.
+	* 콘솔창에서 `jQuery.fn.jquery` 혹은, `$.fn.jquery`
 
 bootstrap 설치하기
 -----
@@ -74,3 +76,23 @@ bootstrap 설치하기
 	* `require('bootstrap')`
 * **bootstrap**은 require만 하게 되면, js만 가져오니, import로 css 또한 가져와야 한다.
 	* `import 'bootstrap/dist/css/bootstrap.min.css'`
+* bootstrap이 설치됨을 확인 한다.
+	* 콘솔 창에서 `typeof $().modal == 'function'`를 실행하여 `true`가 출력할 경우 설치가 된것이다. (modal은 bootstrap javascript 기능)
+	* **DOM**부분에 `<button class='btn btn-primary'>TEST</button>` 만 넣어도 Bootstrap CSS가 적용됨을 확인 할 수 있다.
+
+'$'가 정의되지 않았다고?
+-----
+* `require`를 통해 `window.$`에 **jquery**를 심어 넣으면, 어디서든 접근하는 것이 맞다. 그런데, 막상 스크립트 안에서 쓰려고 하면 '$'가 정의되지 않았다라는 에러가 ESLint에서 발생된다.
+* **ESLint**는 스크립트 이렇게 개발하세요라는 어떤 규약인데, 이거 안해도 컴파일에는 이상이 없지만, **webpack 템플릿** 구성 시 ESLint를 사용하기로 했기 때문에 이 **규칙**을 따라야 한다.
+* 각 Vue Component의 `<script>` 내 상단에 import를 하면된다.
+	* `import $ from 'jquery'`
+* 혹은, ESLint 설정에 '$'와 같이 전역으로 사용되는 기호 체크를 등록 가능하다.
+	* `/.eslintrc.js` 내 설정 내역 중 아래의 내용 추가
+```
+globals:{
+    '$': false
+  }
+```
+
+Custom javascript lib 설치하기
+-----
