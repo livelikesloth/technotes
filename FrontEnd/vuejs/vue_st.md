@@ -5,7 +5,7 @@ Web Framework라고 AngularJS가 이름을 날리던 시기에 개인적인 프�
 
 AngularJS를 사용하면서, ReactJS라는 것도 있다는 것을 알게 되었다. 페이스북에서 만든 View 전용 JS Library인데, 자신들은 프레임워크가 아니면서 View 집중하고 있다라는 것을 말해주는 멋진 녀석이었다. AngularJS는 프레임워크라 규모도 크고 무겁고, 내부적인 선택의 폭이 거의 없다면, ReactJS는 그 반대였다.
 
-그래서, 회사 내 프로젝트에서는 처음으로 ReactJS를 도입하여 사용해 보왔다. 처음에는 ReactJS를 혼자서 이해하고 배워야 하므로, 좀 더 쉽게 배워보자는 생각이 들었다. 한 프로젝트의 관리자 페이지를 혼자 맡기로 하고, **[SmartAdmin](https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0)**이라고 VIEW 셋이 있는데, ReactJS로 구성된 셋이 있어서 이걸 구매하고 사용하면서 프로젝트에 반영하기로 했다.
+그래서, 회사 내 프로젝트에서는 처음으로 ReactJS를 도입하여 사용해 보왔다. 처음에는 ReactJS를 혼자서 이해하고 배워야 하므로, 좀 더 쉽게 배워보자는 생각이 들었다. 한 프로젝트의 관리자 페이지를 혼자 맡기로 하고, [SmartAdmin](https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0)이라고 VIEW 셋이 있는데, ReactJS로 구성된 셋이 있어서 이걸 구매하고 사용하면서 프로젝트에 반영하기로 했다.
 
 처음에는 고통의 연속이었다. 개념도 개념이지만, 이미 다 구현된 셋이었기 때문에 분석을 해야 하는 것도 있었고, ES6 구조도 처음이었기 때문에 눈에 익지 않아 해석하는 데에도 애를 먹었다. 하지만, 몇주 지나고 ReactJS 구조와 flux 형태, router에 대하여 이해하니 어렵지 않게 개발 할 수 있게 되었다.
 
