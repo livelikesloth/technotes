@@ -105,7 +105,7 @@ Custom javascript lib 설치하기
 	* `@`는 src 디렉토리를 의미한다.
 * jQuery와 같이 **전역**으로 사용하려면, `main.js`에 jQuery와 동일하게 등록하고, eslint 예외 설정도 추가해야 한다.
 
-custom css 추가
+Custom css 추가
 ----
 * 템플릿 구성을 그대로 사용한다면, 각 컴포넌트 단위로 **Style**을 구성할 수 있다.
 	* `<style scoped>` 태그 내 **scoped**라고 정의하면, 그 컴포넌트 안에서만 동작하는 style이 되지만, scoped를 빼면 전체 적용된다.
@@ -125,8 +125,27 @@ less 추가
 	* 각 Vue Component내 **style**에서 선언
 		* `<style lang="less" scoped>`  
 
+Webpack에서 Reverse Proxy 사용하기
+-----
+* **Restful API** 서버를 따로 구성해서 사용하기 때문에, Webpack에서 WAS로 접근 가능하기 위하여 **Reverse Proxy** 설정을 해야한다.
+	* `/config/index.js`에 Webpack으로 dev나 build 명령을 사용 시 적용되는 설정 값을 정의
+	* `proxyTable` 부분에 아래와 같이 추가
+```
+proxyTable: {
+  '/jgapi': {
+    target: 'http://localhost:3000',
+    secure: false
+  }
+}
+```
+* URL을 기반으로 정의하며, `target`으로 Proxy 된다.
+	* 예제는 `/jgapi`로 오는 접근은 `http://localhost:3000/jgapi`로 Proxy 접근 된다.
+
 
 링크
 ----
+* [VueJS 가이드](https://kr.vuejs.org/)
+* [Vue-Router 가이드](https://router.vuejs.org/kr/)
+* [Webpack dev 서버 설정](https://webpack.github.io/docs/webpack-dev-server.html)
 * [ES6: Module 설명](http://ohgyun.com/588)
 * [RequireJS 사용방법 정리](http://programmingsummaries.tistory.com/204)
