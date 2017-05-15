@@ -1,4 +1,4 @@
-JSON-SERVER
+Express 내 JSON-SERVER 설치하기
 =====
 **JSON-SERVER**는 nodejs 기반으로 단순히 RestAPI를 Mockup 형태로 사용할 수 있게 제공하는 서버이다. **lowdb** 라이브러리 기반으로 관리 되며, `.json` 타입으로 파일에 저장되기도 한다.
 
