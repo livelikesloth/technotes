@@ -47,3 +47,27 @@ DB 내역이 들어갈 위치를 먼저 사전에 정의를 해야 접근할 수
 사용법
 -----
 https://github.com/typicode/json-server
+
+Request 추가 구성
+-----
+'POST'나 'PUT'과 같이 추가적으로 Request에 들어갈 내역이 있을 수 있다. 가령 **생성시간**과 **수정시간**이 그러한데, 이러한 경우 아래와 같이 로직을 추가 한다.
+
+추가는 Route 정의 상단부에 넣어야 한다.
+
+```javascript
+// Request 추가 구성
+app.use((req, res, next) => {
+  if (req.method === 'POST') {
+    req.body.createDt = Date.now()
+    req.body.updateDt = Date.now()
+  }
+  if (req.method === 'PUT') {
+    req.body.updateDt = Date.now()
+  }
+  next()
+})
+```
+
+Response 추가 구성
+-----
+API 정의에 따라 Response 부분을 변경할 필요가 있다. `json-server`를 그대로 사용할 경우, 조회된 오브젝트만 반환되는데,
