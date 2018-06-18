@@ -3,6 +3,7 @@
 ### Nodejs
 * [2018년에 더 나은 Node.js App을 만들기 위한 8가지 팁](http://tech.javacafe.io/2018/01/11/Tips-to-Build-Better-Node/) : 필요한 것들만 정리되어 있고, 각각 항목들은 링크로 접근하여 바로 정보를 확인 할 수 있게 적용했다.
 * [ExpressJS에서 Sequelize 사용하기](http://webframeworks.kr/tutorials/expressjs/expressjs_orm_one/) : Nodejs에서 `ORM`을 사용하기 위해 중요한 **Sequelize**의 사용을 잘 정리했으며, 정말 필요한 컬럼 정의에 대한 정보가 깔끔하게 정리해 놓았다.
+* [npm 사용 시 ssl 문제 처리](https://stackoverflow.com/questions/13913941/how-to-fix-ssl-certificate-error-when-running-npm-on-windows) : 사내 망과 같이 프록시나 자체 인증서를 사용하는 경우 ssl 접근이 어려워 `npm install`이 제대로 동작하지 않는다. 이럴 경우 ssl 엄격 모드를 해제하거나 인증서 파일을 직접 지정하는 방법이 있는데, 이 이슈를 해결한 내용이다.
 
 ### javascript
 * [jquery보다 먼저 알았으면 좋은 것들](http://blog.jeonghwan.net/2018/01/25/before-jquery.html) : jQuery를 사용하지 않아도 기본 javascript만으로도 많은 것을 할 수 있다. 그것들을 간단한 예시를 통해 정리해 놓았다.
