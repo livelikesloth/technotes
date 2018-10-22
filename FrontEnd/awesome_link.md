@@ -22,3 +22,6 @@
 ### Python
 * [Proxy 환경에서 PIP 설정하기](https://m.blog.naver.com/PostView.nhn?blogId=ajkun&logNo=220562953700&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F) : 회사 사내 망은 자체적인 프록시와 인증서를 가지고 SSL을 접근한다. 그럴 경우 PIP가 제대로 수행되지 못하는데, 이 방법을 통하면 회사 인증서로 PIP 원격 서버에 접근할 수 있다.
 * [Why Anaconda? How to control Anaconda?](https://gzupark.github.io/articles/Why-Anaconda-How-to-control-Anaconda/#2-0) : 아나콘다는 데이터 사이언스 개발을 위하여 많은 관련 라이브러리들을 한셋으로 만들고 이를 통해 가상화 환경을 만들어 준다. 이 아나콘다는 무엇이고, 어떻게 사용하는지 자세히 설명되었다.
+
+### 개발 디자인 패턴 및 방안
+* [소프트웨어가 얼마나 복잡해질 수 있는지에 대한 예제](https://tech.ssut.me/2018/06/03/an-example-of-how-software-becomes-complicated/) : 개발을 하다 보면 만들어진 기능에 추가적으로 이것 저것 넣어, 복잡도가 향상될 수 있다. 그러한 부분을 완화 시키는 방법을 간단한 예제로 잘 서술해 놓았다.
